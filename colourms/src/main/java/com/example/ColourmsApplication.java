@@ -19,8 +19,9 @@ public class ColourmsApplication {
 @RestController
 class ColourController {
 
-	@Value("${service.colour}")
-	private String colour;
+	//@Value("${service.colour}")
+	private String colour = "Hello I'm Color Controller";
+
 
 	@GetMapping("/colour")
 	public String getColour() {
